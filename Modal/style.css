@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-image: url(./shubham-dhage-sX4_Do0HmII-unsplash.jpg);
+  background-position: cover;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  z-index: -10;
+  visibility: hidden;
+  position: fixed; /* Stay in place */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+.modal-on {
+  visibility: visible;
+  z-index: 10;
+}
+
+.content {
+  background-color: #fefefe;
+  border-radius: 1rem;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 30%;
+  height: 30rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 4rem;
+  position: relative;
+}
+
+.content h1 {
+  font-size: 3rem;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+}
+
+.content p {
+  padding-top: 1rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+.close {
+  background: rgb(202, 202, 202);
+  font-size: 2rem;
+  color: white;
+  padding: 1rem;
+  border-bottom-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#open {
+  padding: 1rem;
+  background: none;
+  border-radius: 0.5rem;
+  border: 1px solid black;
+  font-size: 1.3rem;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+}
