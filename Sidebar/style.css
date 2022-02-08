@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background: rgb(228, 228, 228);
+  height: 100%;
+  width: 100%;
+}
+
+.preload {
+  transition: none !important;
+}
+
+.bars {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 2rem 4rem 0rem 0rem;
+  font-size: 4rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.sidebar-container {
+  opacity: 0;
+  background: white;
+  height: 100vh;
+  width: 40rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transform: translateX(-100%);
+  transition: all 1s ease;
+}
+
+.enabled {
+  opacity: 100;
+  transform: translateX(0%);
+  transition: all 1s ease;
+}
+
+.disabled {
+  opacity: 100;
+  transform: translateX(-100%);
+  transition: all 1s ease;
+}
+
+.heading {
+  padding: 1rem 0rem 0rem 1rem;
+}
+
+.nav-links {
+  cursor: pointer;
+  font-size: 3rem;
+  margin-bottom: 45rem;
+  padding-left: 2rem;
+  text-decoration: none;
+  list-style: none;
+}
+
+.nav-links li {
+  padding-bottom: 2rem;
+}
+
+.links {
+  width: 100%;
+  height: 3.5rem;
+  background: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.links img {
+  padding: 2rem;
+}
+
+.close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 1rem 1rem 0rem 0rem;
+  font-size: 2rem;
+  cursor: pointer;
+}
