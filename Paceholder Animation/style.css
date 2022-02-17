@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  background: rgb(207, 207, 207) y;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container {
+  background: rgb(170, 170, 170);
+  width: 50rem;
+  height: 15rem;
+  border-radius: 0.5rem;
+  box-shadow: 0px 0px 20px 7px rgba(129, 129, 129, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  height: 3rem;
+  width: 25rem;
+  background: none;
+  border: none;
+  border-bottom: 1px solid rgb(85, 85, 85);
+}
+
+input:focus {
+  outline: none;
+}
+
+placeholder {
+  margin-left: 1rem;
+}
