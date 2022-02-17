@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Proza+Libre:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>drumkit</title>
+  </head>
+  <body>
+    <!-- Keys -->
+    <div class="keys">
+      <div data-key="65" class="key">
+        <kbd>A</kbd>
+        <span class="sound">clap</span>
+      </div>
+      <div data-key="83" class="key">
+        <kbd>S</kbd>
+        <span class="sound">hihat</span>
+      </div>
+      <div data-key="68" class="key">
+        <kbd>D</kbd>
+        <span class="sound">kick</span>
+      </div>
+      <div data-key="70" class="key">
+        <kbd>F</kbd>
+        <span class="sound">openhat</span>
+      </div>
+      <div data-key="71" class="key">
+        <kbd>G</kbd>
+        <span class="sound">boom</span>
+      </div>
+      <div data-key="72" class="key">
+        <kbd>H</kbd>
+        <span class="sound">ride</span>
+      </div>
+      <div data-key="74" class="key">
+        <kbd>J</kbd>
+        <span class="sound">snare</span>
+      </div>
+      <div data-key="75" class="key">
+        <kbd>K</kbd>
+        <span class="sound">tom</span>
+      </div>
+      <div data-key="76" class="key">
+        <kbd>L</kbd>
+        <span class="sound">tink</span>
+      </div>
+    </div>
+    <!-- Audio files -->
+    <audio
+      data-key="71"
+      src="./Drumkit Sounds/01 - JavaScript Drum Kit_sounds_boom.wav"
+    ></audio>
+    <audio
+      data-key="65"
+      src="./Drumkit Sounds/01 - JavaScript Drum Kit_sounds_clap.wav"
+    ></audio>
+    <audio
+      data-key="83"
+      src="./Drumkit Sounds/01 - JavaScript Drum Kit_sounds_hihat.wav"
+    ></audio>
+    <audio
+      data-key="68"
+      src="./Drumkit Sounds/01 - JavaScript Drum Kit_sounds_kick.wav"
+    ></audio>
+    <audio
+      data-key="70"
+      src="./Drumkit Sounds/01 - JavaScript Drum Kit_sounds_openhat.wav"
+    ></audio>
+    <audio
+      data-key="72"
+      src="./Drumkit Sounds/01 - JavaScript Drum Kit_sounds_ride.wav"
+    ></audio>
+    <audio
+      data-key="74"
+      src="./Drumkit Sounds/01 - JavaScript Drum Kit_sounds_snare.wav"
+    ></audio>
+    <audio
+      data-key="76"
+      src="./Drumkit Sounds/01 - JavaScript Drum Kit_sounds_tink.wav"
+    ></audio>
+    <audio
+      data-key="75"
+      src="./Drumkit Sounds/01 - JavaScript Drum Kit_sounds_tom.wav"
+    ></audio>
+    <script src="./drumkit.js"></script>
+  </body>
+</html>
