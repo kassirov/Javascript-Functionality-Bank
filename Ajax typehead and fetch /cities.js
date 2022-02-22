@@ -4,3 +4,5 @@ const endpoint =
 const cities = [];
 
 fetch(endpoint);
+
+console.log("endpoint", endpoint);
