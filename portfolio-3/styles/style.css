@@ -15,7 +15,6 @@ body {
 }
 
 header {
-  width: 90%;
   margin: auto;
   height: 100vh;
   min-height: 90rem;
@@ -54,6 +53,9 @@ header {
 
 .hero {
   height: 90vh;
+  min-height: 85rem;
+  width: 90%;
+  margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -77,9 +79,9 @@ header {
 .intro {
   font-family: "poppins", sans-serif;
   font-weight: 400;
-  font-size: 6.4rem;
+  font-size: 4.5rem;
   color: white;
-  width: 80%;
+  width: 70%;
   padding-bottom: 7rem;
 }
 
@@ -95,8 +97,7 @@ header {
 }
 
 .resume {
-  height: 82vh;
-  min-height: 75rem;
+  height: 90vh;
   margin: auto;
   width: 90%;
   display: -webkit-box;
@@ -127,9 +128,9 @@ header {
 .desc {
   font-family: "poppins", sans-serif;
   font-weight: 300;
-  font-size: 4rem;
+  font-size: 3.3rem;
   color: white;
-  width: 80%;
+  width: 85%;
 }
 
 .arsenal-wrapper {
@@ -319,5 +320,177 @@ textarea {
   font-size: 7rem;
   font-weight: 400;
   color: white;
+}
+
+@media screen and (max-width: 1170px) {
+  .desc {
+    font-size: 3.3rem;
+  }
+  .icon {
+    max-height: 7rem;
+  }
+  .icon-name {
+    font-size: 1.4rem;
+  }
+  .resume h1,
+  .arsenal h1,
+  .message h1 {
+    font-size: 6.5rem;
+  }
+  form {
+    width: 70%;
+  }
+  .contact-div h2 {
+    font-size: 6rem;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .nav-bar h3,
+  .nav-bar a {
+    font-size: 1.8rem;
+  }
+  .desc {
+    font-size: 2.7rem;
+  }
+  .skills {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[5];
+        grid-template-columns: repeat(5, 1fr);
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
+  }
+  .skill {
+    padding-bottom: 5rem;
+  }
+  .arsenal,
+  .arsenal-wrapper {
+    height: 60vh;
+    min-height: 55rem;
+  }
+  .arsenal-wrapper h1 {
+    padding-bottom: 7rem;
+  }
+  .resume h1,
+  .arsenal h1,
+  .message h1 {
+    font-size: 5.8rem;
+  }
+  form {
+    width: 70%;
+  }
+  .contact {
+    height: 45vh;
+    min-height: 40rem;
+  }
+  .contact-div h2 {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  form {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .contact-div h2 {
+    font-size: 3.5rem;
+  }
+  .resume h1,
+  .arsenal h1,
+  .message h1 {
+    font-size: 5rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .desc {
+    font-size: 2.3rem;
+  }
+  .skills {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-rows: (1fr)[3];
+        grid-template-rows: repeat(3, 1fr);
+  }
+  .skill {
+    padding-bottom: 6rem;
+  }
+  .arsenal,
+  .arsenal-wrapper {
+    height: 82vh;
+    min-height: 75rem;
+  }
+  .arsenal-wrapper h1 {
+    padding-bottom: 8rem;
+  }
+  .icon-name {
+    opacity: 1;
+  }
+  .resume h1,
+  .arsenal h1,
+  .message h1 {
+    font-size: 5.3rem;
+  }
+  .contact {
+    height: 10vh;
+    min-height: 5rem;
+  }
+  .message h1 {
+    margin-top: 1.7rem;
+  }
+  .contact-div h2 {
+    font-size: 3rem;
+  }
+  .contact-info {
+    padding-bottom: 3rem;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .contact-div h2 {
+    font-size: 2.5rem;
+  }
+  .contact-info {
+    padding-bottom: 3rem;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .intro {
+    font-size: 4rem;
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 967px) {
+  .intro {
+    font-size: 3rem;
+    width: 90%;
+  }
+  .explore-btn {
+    width: 18rem;
+    height: 4rem;
+    border-radius: 4rem;
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: white;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .intro {
+    font-size: 2.5rem;
+    width: 100%;
+  }
+  .hero {
+    height: 90vh;
+    min-height: 65rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
