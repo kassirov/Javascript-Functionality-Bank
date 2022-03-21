@@ -70,7 +70,7 @@ header {
 
 .hello {
   font-family: "pacifico", sans-serif;
-  font-size: 6rem;
+  font-size: 7.5rem;
   font-weight: 100;
   color: white;
   padding-bottom: 3rem;
@@ -79,25 +79,47 @@ header {
 .intro {
   font-family: "poppins", sans-serif;
   font-weight: 400;
-  font-size: 4.5rem;
+  font-size: 4.2rem;
   color: white;
   width: 70%;
   padding-bottom: 7rem;
 }
 
 .explore-btn {
-  width: 25rem;
+  width: 20rem;
   height: 5rem;
   background: none;
   border: 1px solid white;
   border-radius: 4rem;
-  font-size: 2rem;
-  font-weight: 300;
   color: white;
+  cursor: pointer;
+  -webkit-transition: 0.5s ease all;
+  transition: 0.5s ease all;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-decoration: none;
+  font-family: "poppins", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.explore-btn:hover {
+  background: white;
+  border: none;
+  color: black;
 }
 
 .resume {
+  margin-top: 10rem;
   height: 90vh;
+  min-height: 85rem;
   margin: auto;
   width: 90%;
   display: -webkit-box;
@@ -131,6 +153,39 @@ header {
   font-size: 3.3rem;
   color: white;
   width: 85%;
+  padding-top: 4rem;
+}
+
+.fa-angle-down {
+  color: #d4d4d4;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-top: 15rem;
+  -webkit-animation: arrow 0.8s ease infinite alternate;
+          animation: arrow 0.8s ease infinite alternate;
+}
+
+@-webkit-keyframes arrow {
+  from {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+  to {
+    -webkit-transform: translateY(20%);
+            transform: translateY(20%);
+  }
+}
+
+@keyframes arrow {
+  from {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+  to {
+    -webkit-transform: translateY(20%);
+            transform: translateY(20%);
+  }
 }
 
 .arsenal-wrapper {
@@ -226,7 +281,7 @@ header {
   font-family: "poppins", sans-serif;
   font-weight: 400;
   font-size: 7.2rem;
-  padding-top: 3rem;
+  padding-top: 5rem;
   padding-bottom: 8rem;
   color: white;
 }
@@ -245,28 +300,28 @@ form {
 ::-webkit-input-placeholder {
   font-family: "poppins", sans-serif;
   font-size: 2rem;
-  color: white;
+  color: #313131;
   opacity: 0.8;
 }
 
 :-ms-input-placeholder {
   font-family: "poppins", sans-serif;
   font-size: 2rem;
-  color: white;
+  color: #313131;
   opacity: 0.8;
 }
 
 ::-ms-input-placeholder {
   font-family: "poppins", sans-serif;
   font-size: 2rem;
-  color: white;
+  color: #313131;
   opacity: 0.8;
 }
 
 ::placeholder {
   font-family: "poppins", sans-serif;
   font-size: 2rem;
-  color: white;
+  color: #313131;
   opacity: 0.8;
 }
 
@@ -276,9 +331,9 @@ input {
   padding-left: 3rem;
   font-size: 2.5rem;
   border: none;
-  background: #7d7d7d;
+  background: #c4c4c4;
   border-radius: 0.2rem;
-  color: white;
+  color: #313131;
   outline: none;
 }
 
@@ -292,8 +347,8 @@ textarea {
   resize: none;
   border: none;
   border-radius: 0.2rem;
-  background: #7d7d7d;
-  color: white;
+  background: #c4c4c4;
+  color: #313131;
   outline: none;
 }
 
@@ -320,6 +375,10 @@ textarea {
   font-size: 7rem;
   font-weight: 400;
   color: white;
+}
+
+.contact-info {
+  padding-top: 7rem;
 }
 
 @media screen and (max-width: 1170px) {
@@ -491,6 +550,9 @@ textarea {
   .hero {
     height: 90vh;
     min-height: 65rem;
+  }
+  .desc {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */
