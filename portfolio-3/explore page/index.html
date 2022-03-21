@@ -34,7 +34,7 @@
     <title>Sam Kassirov</title>
   </head>
   <nav class="nav-bar">
-    <h3>Sam Kassirov</h3>
+    <h3><a href="../index.html">Sam Kassirov</a></h3>
     <h3><a href="../index.html">blurb</a></h3>
   </nav>
   <section class="resume">
@@ -95,7 +95,14 @@
   </section>
   <section class="message">
     <h1>Contact</h1>
-    <form action="submit">
+    <form action="https://formsubmit.co/hello@kassirov.io" method="POST">
+      <input type="text" name="_honey" style="display: none" />
+      <input
+        type="hidden"
+        name="_next"
+        value="http://127.0.0.1:5502/explore%20page/index.html"
+      />
+      <input type="hidden" name="_captcha" value="false" />
       <input type="text" placeholder="name" maxlength="30" />
       <input type="email" placeholder="email" />
       <input type="text" placeholder="subject" maxlength="1000" />
@@ -106,7 +113,7 @@
         rows="10"
         placeholder="message"
       ></textarea>
-      <button type="submit">send message</button>
+      <button class="message-btn" type="submit">send message</button>
     </form>
   </section>
   <section class="contact">
@@ -121,7 +128,7 @@
       </div>
       <div class="contact-div">
         <h2>Email</h2>
-        <h2>contact@kassirov.io</h2>
+        <h2>hello@kassirov.io</h2>
       </div>
     </div>
   </section>
