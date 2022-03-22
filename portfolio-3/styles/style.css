@@ -354,13 +354,23 @@ textarea {
 
 .message-btn {
   margin-top: 2rem;
-  background: #474647;
-  height: 3rem;
-  width: 25rem;
+  background: #3b3b3b;
+  height: 7rem;
+  width: 50%;
   border: none;
   color: white;
   font-family: "poppins", sans-serif;
   font-size: 2rem;
+  border-radius: 0.2rem;
+  -webkit-transition: 0.5s ease all;
+  transition: 0.5s ease all;
+  cursor: pointer;
+}
+
+.message-btn:hover {
+  border: 1px solid #9c9c9c;
+  background: #2b2b2b;
+  color: white;
 }
 
 .contact {
@@ -461,6 +471,9 @@ textarea {
 
 @media screen and (max-width: 830px) {
   form {
+    width: 100%;
+  }
+  .message-btn {
     width: 100%;
   }
 }

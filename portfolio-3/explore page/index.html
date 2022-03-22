@@ -103,15 +103,16 @@
         value="http://127.0.0.1:5502/explore%20page/index.html"
       />
       <input type="hidden" name="_captcha" value="false" />
-      <input type="text" placeholder="name" maxlength="30" />
-      <input type="email" placeholder="email" />
-      <input type="text" placeholder="subject" maxlength="1000" />
+      <input type="text" placeholder="name" maxlength="30" required />
+      <input type="email" placeholder="email" required />
+      <input type="text" placeholder="subject" maxlength="30" />
       <textarea
         name="textarea"
         id=""
         cols="30"
         rows="10"
         placeholder="message"
+        maxlength="1000"
       ></textarea>
       <button class="message-btn" type="submit">send message</button>
     </form>
