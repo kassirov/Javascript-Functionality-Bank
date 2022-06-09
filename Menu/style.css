@@ -8,6 +8,10 @@ html {
   font-size: 62.5%;
 }
 
+body {
+  font-family: "poppins", sans-serif;
+}
+
 .title {
   margin: auto;
   width: 100%;
@@ -18,7 +22,6 @@ html {
 
 .title h1 {
   font-size: 4.5rem;
-  font-family: "poppins", sans-serif;
   font-weight: 400;
 }
 
@@ -91,13 +94,11 @@ html {
 .price {
   color: #c59d5f;
   font-size: 1.4rem;
-  font-family: "poppins", sans-serif;
   font-weight: 400;
 }
 
 .item-title {
   font-size: 1.5rem;
-  font-family: "poppins", sans-serif;
   font-weight: 400;
   letter-spacing: 0.2rem;
 }
@@ -107,12 +108,10 @@ html {
   justify-content: space-between;
   min-height: 3rem;
   border-bottom: 0.3px solid rgb(165, 165, 165);
-  /* border-bottom-style: dashed; */
 }
 
 .item-text {
   padding-top: 2rem;
-  font-family: "poppins", sans-serif;
   font-weight: 400;
   font-size: 1.3rem;
 }
