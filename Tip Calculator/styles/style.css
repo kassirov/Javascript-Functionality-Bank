@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: url("../imgs/background.jpg");
+}
+
+.container {
+  max-width: 400px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #252525;
+  padding: 3rem;
+  border-radius: 10px;
+  opacity: 0.9;
+  color: white;
+  font-size: 2rem;
+}
+
+.margin {
+  margin-bottom: 6rem;
+}
+
+input {
+  padding: 1rem;
+  font-size: 1.7rem;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  margin: 1rem;
+  width: 100%;
+}
+
+.btn {
+  width: 100%;
+  padding: 1rem;
+  margin-top: 3rem;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+  font-size: 1.7rem;
+}
+
+.btn:hover {
+  background-color: #383838;
+  color: white;
+  outline: 1px solid white;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/*# sourceMappingURL=style.css.map */
