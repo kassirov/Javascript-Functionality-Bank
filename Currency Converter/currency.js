@@ -25,7 +25,7 @@ button.addEventListener("click", () => {
   if (curr1 != curr2) {
     convert(curr1, curr2, value);
   } else {
-    alert("Choose another currency");
+    alert("Choose another currency, they're the same");
   }
 });
 
