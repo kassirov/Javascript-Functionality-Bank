@@ -43,7 +43,7 @@ input::-webkit-inner-spin-button {
 
 .container {
   z-index: 99;
-  background-color: #818181;
+  background-color: #272727;
   opacity: 0.9;
   height: 265px;
   width: 400px;
@@ -70,15 +70,31 @@ input::-webkit-inner-spin-button {
 input,
 select {
   padding: 0.8rem;
+  margin: 0.2rem;
+  outline: none;
+  border: none;
+  border-radius: 2.5px;
 }
 
 input {
   min-width: 200px;
+  padding: 0.9rem;
+}
+
+select {
+  background-color: rgba(5, 5, 253, 0.568);
+  color: white;
 }
 
 #button {
   min-width: 150px;
   padding: 1rem;
   margin-top: 4rem;
+  cursor: pointer;
+}
+
+#answer {
+  background-color: #6e6e6e;
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */
