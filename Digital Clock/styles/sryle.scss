@@ -1,0 +1,30 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+}
+
+.container span {
+  font-size: 10rem;
+  color: white;
+}
+
+.container {
+  background-color: rgb(102, 102, 102);
+  opacity: 0.8;
+  border-radius: 20px;
+  padding: 2rem 5rem;
+}
