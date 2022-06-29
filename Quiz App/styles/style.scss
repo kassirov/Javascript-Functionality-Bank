@@ -14,10 +14,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: auto;
+  padding: 0px 20px;
 }
 
 .quiz-container {
-  height: 300px;
+  height: 350px;
+  max-width: 500px;
   min-width: 400px;
   border-radius: 15px;
   padding: 2.2rem;
@@ -46,7 +49,7 @@ button {
 h2 {
   font-weight: 500;
   font-size: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 3.5rem;
 }
 
 ul li {
@@ -55,4 +58,5 @@ ul li {
 
 label {
   padding-left: 1rem;
+  cursor: pointer;
 }

@@ -11,27 +11,27 @@
   <title>Quiz App</title>
 </head>
 <body>
-    <div class="quiz-container">
-      <h2>Question here</h2>
+    <div class="quiz-container" id="quiz">
+      <h2 id="question">Question here</h2>
       <ul>
         <li>
-          <input type="radio" id="a" name="answer">
-          <label for="a">answer</label>
+          <input type="radio" id="a" name="answer" class="answer">
+          <label for="a" id="a_answer">answer</label>
         </li>
         <li>
-          <input type="radio" id="b" name="answer">
-          <label for="b">answer</label>
+          <input type="radio" id="b" name="answer" class="answer">
+          <label for="b" id="b_answer">answer</label>
         </li>
         <li>
-          <input type="radio" id="c" name="answer">
-          <label for="c">answer</label>
+          <input type="radio" id="c" name="answer" class="answer">
+          <label for="c" id="c_answer">answer</label>
         </li>
         <li>
-          <input type="radio" id="d" name="answer">
-          <label for="d">answer</label>
+          <input type="radio" id="d" name="answer" class="answer">
+          <label for="d" id="d_answer">answer</label>
         </li>
       </ul>
-      <button>Submit</button>
+      <button id="submit">Submit</button>
     </div>
     <script src="./quiz.js"></script>
 </body>

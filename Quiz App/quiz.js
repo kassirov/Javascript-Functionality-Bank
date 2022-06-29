@@ -5,7 +5,7 @@ const quizData = [
     b: "Canada",
     c: "Mexico",
     d: "China",
-    answer: "b"
+    correct: "b"
   },
   {
     question: "What is the capital of Malta?",
@@ -13,7 +13,7 @@ const quizData = [
     b: "Birgu",
     c: "Valleta",
     d: "Sliema",
-    answer: "c"
+    correct: "c"
   },
   {
     question:
@@ -22,7 +22,7 @@ const quizData = [
     b: "South Africa",
     c: "Madagascar",
     d: "Jamaica",
-    answer: "a"
+    correct: "a"
   },
   {
     question: "In which UK city would you find the river Clyde?",
@@ -30,7 +30,7 @@ const quizData = [
     b: "Glasgow",
     c: "Liverpool",
     d: "Colchester",
-    answer: "b"
+    correct: "b"
   },
   {
     question:
@@ -39,7 +39,7 @@ const quizData = [
     b: "Ukraine",
     c: "Poland",
     d: "Russia",
-    answer: "d"
+    correct: "d"
   },
   {
     question: "What is the capital of Canada?",
@@ -47,7 +47,7 @@ const quizData = [
     b: "Montreal",
     c: "Vancouver",
     d: "Ottawa",
-    answer: "d"
+    correct: "d"
   },
   {
     question: "What is the largest desert in the world?",
@@ -55,7 +55,7 @@ const quizData = [
     b: "Antarctic Desert",
     c: "Great Australian",
     d: "Arctic Desert	",
-    answer: "b"
+    correct: "b"
   },
   {
     question: "How many boroughs are there in New York City?",
@@ -63,7 +63,7 @@ const quizData = [
     b: "9",
     c: "5",
     d: "3",
-    answer: "c"
+    correct: "c"
   },
   {
     question: "What is the capital of Peru?",
@@ -71,7 +71,7 @@ const quizData = [
     b: "Cusco",
     c: "Trujillo",
     d: "Piura",
-    answer: "a"
+    correct: "a"
   },
   {
     question: "How many countries still have the shilling as currency?",
@@ -79,6 +79,71 @@ const quizData = [
     b: "7",
     c: "10",
     d: "4",
-    answer: "d"
+    correct: "d"
   }
 ];
+const answerElements = document.querySelectorAll(".answer");
+const questionElement = document.getElementById("question");
+const quiz = document.getElementById("quiz");
+
+const a_answer = document.getElementById("a_answer");
+const b_answer = document.getElementById("b_answer");
+const c_answer = document.getElementById("c_answer");
+const d_answer = document.getElementById("d_answer");
+const submitButton = document.getElementById("submit");
+
+let currentQuiz = 0;
+let score = 0;
+
+loadQuiz();
+
+function loadQuiz() {
+  nonSelectedAnswers();
+
+  const currentQuizData = quizData[currentQuiz];
+
+  questionElement.innerText = currentQuizData.question;
+  a_answer.innerText = currentQuizData.a;
+  b_answer.innerText = currentQuizData.b;
+  c_answer.innerText = currentQuizData.c;
+  d_answer.innerText = currentQuizData.d;
+}
+
+function selectedAnswer() {
+  let answer = undefined;
+
+  answerElements.forEach(answerE => {
+    if (answerE.checked) {
+      answer = answerE.id;
+    }
+  });
+
+  return answer;
+}
+
+function nonSelectedAnswers() {
+  answerElements.forEach(answer => {
+    answer.checked = false;
+  });
+}
+
+submitButton.addEventListener("click", () => {
+  const answer = selectedAnswer();
+
+  if (answer) {
+    if (answer === quizData[currentQuiz].correct) {
+      score++;
+    }
+
+    currentQuiz++;
+    if (currentQuiz < quizData.length) {
+      loadQuiz();
+    } else {
+      quiz.innerHTML = `
+                    <h2>You finished the quiz with a score of: ${score}/${quizData.length}.</h2>
+                    
+                    <button onclick="location.reload()">Reload</button>
+                `;
+    }
+  }
+});
